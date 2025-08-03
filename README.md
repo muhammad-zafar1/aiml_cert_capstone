@@ -1,8 +1,8 @@
 ## Professional Certificate in Machine Learning and Artificial Intelligence - Berkley-Hass Program
 ## Capstone Project Report
+(A Capstone Project for AI ML Certificate Course (July 2025) - Muhammad Zafar
 
 ## Title: Renewable Energy Project Opportunities in the Texas Permian Basin
-(A Capstone Project for AI ML Certificate Course (July 2025) - Muhammad Zafar
 
 ![text](images/project_header_image.png)
 
