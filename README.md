@@ -74,16 +74,31 @@ Results
 --------
 What did your research find?
 
+TODO
+-- add EDA summary
+
+-- add Internet presence summary
+
+-- further details & Charts in the Presentation
+
 
 Recommendations
 ---------------
 What suggestions do you have for next steps?
 
+TODO
+-- Target these counties
+
+-- Target these types of projects
+
+-- Further work:
+Perform financial cost/benefit & ROI analysis and choose projects with highest ROIs over a 10-year or more horizon.
+
 
 Project Outline
 ---------------
-- [Exploratory Data Analysis Noteboo](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_EDA_analysis.ipynb)
-- [Supervised Learning - Regression Notebook](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_regression.ipynb)
+- [Exploratory Data Analysis Notebook - ses_data_permian_counties_EDA_analysis.ipynb](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_EDA_analysis.ipynb)
+- [Supervised Learning - Regression Notebook - ses_data_permian_counties_regression.ipynb](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_regression.ipynb)
 - [Executive Presentation](Link)
 
 
