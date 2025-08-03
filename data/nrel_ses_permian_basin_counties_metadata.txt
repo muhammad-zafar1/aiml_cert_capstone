@@ -1,0 +1,281 @@
+
+Metadata for the Permian Basin Counties Socio-Economic Data
+------------------------------------------------------------
+The National Renewable Energy Lab (NREL) (https://www.nrel.gov/) is one of the premiere U.S. government research labs that shares information on the use and deployment of renewable energy technologies and projects in the U.S. The NREL Permian Energy Development Lab (PEDL) published a data set for socioeconomic (including energy production) data for all the counties in the Permian Basin in Texas and New Mexico.
+
+The dataset are organized into four categories: Socioeconomics, Health & Wellbeing, Jobs & Workforce, and Energy Infrastructure & Potential. 
+
+Each category contains multiple data elements the details of those are provided in a separate file: nrel_ses_permian_basin_counties_metadata.txt
+
+
+Key: 
+Category	
+	Variable Name	Description		Source	Year	Notes
+
+Metadata Details
+-----------------
+County Identification	
+	CountyFIPS	5-digit Federal Information Processing Standards (FIPS) at the county level	-	-	See this link for more information on FIPS codes
+	State	State abbreviation (TX or NM)	-	-	
+	County	County name	-	-	
+	
+Socioeconomics	
+	PopulationSize	Population estimates	USDA	2021	
+	PopulationChangeRate_2010_2020	Population change from 2010 to 2020 as a percentage of the initial population	USDA	2010-2020	
+	PopulationChangeRate_2020_2021	Population change from 2020 to 2021 as a percentage of the initial population	USDA	2020-2021	
+	GDP_2021_thousands	Gross domestic product (GDP) in thousands of chained 2021 dollars	BEA	2021	
+	GDP_staterank2021	State-level GDP rank	BEA	2021	
+	GDP_pctchange_2020_2021	Percent change from 2020 to 2021	BEA	2021	
+	GDP_pctchange_staterank2021	State-level GDP change rank	BEA	2021	
+	TribeName	Name of tribe(s) by county (if any)	NLIS	2021	
+	TribeAcres	Acres of tribe(s) by county (if any)	NLIS	2021
+	
+	DAC_StatusYES_NumTracts	Number of census tracts within a county that are designated as disadvantaged communities (DACs). DAC status is a yes/no designated assigned by the U.S. federal government using cumulative burden across indicators related to climate change impacts, energy, air quality, pollution, health, housing, transportation, and workforce development.	CEJST	2023	
+	DAC_StatusYES_PctTracts	Percent of census tracts within a county that are designated as DACs (see above)	CEJST	2023	
+	SVI_OverallRanking	Composite Social Vulnerability Index (SVI) score that ranks communities based on four vulnerability themes (described below). The national percentile scores range from 0 (low vulnerability) to 1 (high vulnerability).	CDC	2020	
+	SVI_Socioeconomic	The socioeconomic theme includes national percentiles for: below 150% poverty, unemployed, housing cost burden, no high school diploma, and no health insurance.	CDC	2020	
+	SVI_HouseholdCharacteristics	The household characteristics theme includes national percentiles for: aged 65 or older, aged 17 or younger, civilian with a disability, single-parent households, and English language proficiency.	CDC	2020	
+	SVI_MinorityStatus	The minority status theme includes national percentiles for: racial and ethnic minority status, including Hispanic or Latino, Black and African American, American Indian or Alaska Native, Asian, and Native Hawaiian.	CDC	2020	
+	SVI_HousingTransportation	The housing & transportation theme includes national percentiles for multi-unit structures, mobile homes, crowding, no vehicle, and group quarters.	CDC	2020	
+
+	PctAge65andOlder	Percent of county population age 65 or older	USDA	2020	
+	PctUnderAge18	Percent of county population under age 18	USDA	2020	
+	PctBlackNonHispanic	Percent of population that identifies as Black and Non-Hispanic	USDA	2020	
+	PctHispanic	Percent of population that identifies as Hispanic	USDA	2020	
+	PctNativeAmerican	Percent of population that identifies as Native American	USDA	2020	
+	PctWhiteNonHispanic	Percent of population that identifies as White and Non-Hispanic	USDA	2020	
+	PctMultipleRace	Percent of population that identifies with multiple races	USDA	2020	
+	PctLimitedEnglishSpeaking	Percent of population with limited English-speaking ability	ACS 5-year estimate - table S1602	2017-2021	
+	PctForeignBorn	Percent of population not born in the U.S.	USDA	2017-2021	
+	PctLessThanHS	Percent of population with less than a high school (HS) education	USDA	2017-2021	
+	PctHSDiplomaOnly	Percent of population with a HS diploma	USDA	2017-2021	
+	PctSomeCollege	Percent of population with some college education	USDA	2017-2021	
+	PctAssocDegree	Percent of population with an associate's degree	USDA	2017-2021	
+	PctCollegePlus	Percent of population with a four-year college degree or higher	USDA	2017-2021	
+	MedianHHInc	Median household (HH) income in 2021 dollars	USDA	2017-2021	
+	PovertyRate	Percent of population living in families with income below their poverty threshold	USDA	2017-2021	
+	EnergyBurden	Percent of household income spent on household energy costs. A score of greater than 6% is considered high.	DOE	2020	
+	UnemploymentRate	Percent of county labor force who were unemployed and looking for work	USDA	2021	
+	Literacy_AvgScore	Model-based literacy score, ranging from 0 (low proficiency) to 500 (high proficiency)	DOEd	2012-2017	
+	Literacy_PctLevel1	Percent of county adult population with a modeled literacy score below 226 points.  DOEd notes that "adults at this level can be considered at risk for difficulties using or comprehending print material. Adults at the upper end of this level can read short texts, in print or online, and understand the meaning well enough to perform simply tasks, such as filling out a short form, but drawing inferences or combining multiple sources of text may be too difficult. Adults who are below Level 1 may only be able to understand very basic vocabulary or find very specific information on a familiar topic. Some adults below Level 1 may struggle even to do this and may be functionally illiterate."	DOEd	2012-2017	
+	Literacy_PctLevel2	Percent of county adult population with a modeled literacy score greater than 226 points but less than 276 points. DOEd notes that "adults at this level can be considered nearing proficiency but still struggling to perform tasks with text-based information. Such adults may be able to read print and digital texts, relate multiple pieces of information within or across a couple documents, compare and contrast, and draw simple inferences. They can navigate in a digital environment to access key information, such as finding two main benefits of one product over another. However, more complex inferencing and evaluation may be too difficult."	DOEd	2012-2017	
+	Literacy_PctLevel3	Percent of county adult population with a modeled literacy score above 276 points.  DOEd notes that "adults at this level can be considered proficient at working with information and ideas in text. They have a range of higher literacy skills from the ability to understand, interpret, and synthesize information across multiple, complex texts to the ability to evaluate the reliability of sources and infer sophisticated meanings and complex ideas from written sources."	DOEd	2012-2017	
+	Numeracy_AvgScore	Model-based numeracy score, ranging from 0 (low proficiency) to 500 (high proficiency)	DOEd	2012-2017	
+	Numeracy_PctLevel1	Percent of county adult population with a modeled numeracy score below 226 points.  DOEd notes that "adults at this level can be considered at risk for difficulties with numeracy. Adults at the upper end of this level can understand how to add, subtract, multiply, and divide and can perform basic one-step mathematical operations with given values or common spatial representations (e.g., calculate how many bottles of soda are in a full box with two levels when only the top level can be seen). Adults who are below Level 1 may only be able to count, sort, and do basic arithmetic operations with simple whole numbers and may be functionally innumerate."	DOEd	2012-2017	
+	Numeracy_PctLevel2	Percent of county adult population with a modeled numeracy score greater than 226 points but less than 276 points. DOEd notes that "adults at this level can be considered nearing proficiency but still struggling to perform numeracy tasks. Such adults can successfully perform tasks requiring two or three steps involving calculations with whole numbers and common decimals, percentages, and fractions. They can conduct simple measurement and interpret relatively simple data and statistics in texts, tables, and graphs. However, more complicated problem solving (where the information is not explicit or is in an unfamiliar context) may be too difficult."	DOEd	2012-2017	
+	Numeracy_PctLevel3	Percent of county adult population with a modeled numeracy score above 276 points.  DOEd notes that "adults at this level can be considered proficient at working with mathematical information and ideas. They have a range of numeracy skills from the ability to recognize mathematical relationships and apply proportions to the ability to understand abstract representations of mathematical concepts and engage in complex reasoning about quantities and data."	DOEd	2012-2017	
+
+
+Health & Wellbeing	
+	HealthRank_HealthOutcomes	County rankings assigned within states based on length of life and quality of life (described below). The ranks are state-level, meaning that a county with a rank of 1 is the healthiest within their state.	University of Wisconsin	2023	
+	HealthRank_LengthOfLife	Health ranking for length of life, including premature deaths such as child and infant mortality. The ranks are state-level, meaning that a county with a rank of 1 is the healthiest within their state.	University of Wisconsin	2023	
+	HealthRank_QualityOfLife	Health ranking for quality of life, which is measured using low birthweights, diabetes prevalence, HIV prevalence, and perceptions of health, including physical health, mental health, and distress. The ranks are state-level, meaning that a county with a rank of 1 is the healthiest within their state.	University of Wisconsin	2023	
+	HealthRank_HealthFactors	County rankings assigned within states based on health behaviors, clinical care, social & economic factors, and physical environment (described below). The ranks are state-level, meaning that a county with a rank of 1 is the healthiest within their state.	University of Wisconsin	2023	
+	HealthRank_HealthBehaviors	Health ranking for healthy behaviors, including tobacco use, diet and exercise, alcohol and drug use, and sexual activity. The ranks are state-level, meaning that a county with a rank of 1 is the healthiest within their state.	University of Wisconsin	2023	
+	HealthRank_ClinicalCare	Health ranking for clinical care, including access to care and quality of care. The ranks are state-level, meaning that a county with a rank of 1 is the healthiest within their state.	University of Wisconsin	2023	
+	HealthRank_SocialEconomicFactors	Health ranking for social and economic factors, including education, employment, income, family and social support, and community safety. The ranks are state-level, meaning that a county with a rank of 1 is the healthiest within their state.	University of Wisconsin	2023	
+	HealthRank_PhysicalEnvironment	Health ranking for physical environment, including air and water quality, housing, and transportation. The ranks are state-level, meaning that a county with a rank of 1 is the healthiest within their state.	University of Wisconsin	2023	
+	Cancer_PctTractsOver75thPctile	Air toxics cancer risk, assessed by EPA's EJScreen using lifetime cancer risk from the inhalation of air toxics. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for air toxics cancer risk, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	EPA	2017	
+	Respiratory_PctTractsOver75thPctile	Air toxics respiratory hazard, assessed by EPA's EJScreen using the ratio of exposure concetration to a health-based reference concentration. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for air toxics respiratory hazard, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	EPA	2017	
+	DieselPM_PctTractsOver75thPctile	Diesel particulate matter (PM), assessed by EPA's EJScreen using the diesel particulate matter level in the air. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for diesel PM, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	EPA	2017	
+	PM25_PctTractsOver75thPctile	Particulate matter 2.5 (PM2.5), assessed by EPA's EJScreen using particulate matter levels in the air. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for PM2.5, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	EPA	2018	
+	Ozone_PctTractsOver75thPctile	Ozone concentrations, assessed by EPA's EJScreen using the summer average of daily maximum 8-hour concentrations of ozone. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for ozone concentrations, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	EPA	2018	
+	LeadPaint_PctTractsOver75thPctile	Lead paint indicator, assessed by EPA's EJScreen using the percent of housing units built before 1960. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for lead paint, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	EPA	2016-2020	
+	NPL_PctTractsOver75thPctile	Proximity to national priority list (NPL) sites, assessed by EPA's EJScreen using the count of proposed or listed superfund sites within 5 km of a census tract divided by the distance. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for NPL proximity, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	EPA	2022	
+	RMP_PctTractsOver75thPctile	Proximity to risk management plan (RMP) facilities, assessed by EPA's EJScreen using the county of facilities with accident management plans within 5 km of a census tract divided by the distance. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for RMP proximity, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	EPA	2022	
+	TSDF_PctTractsOver75thPctile	Proximity to treatment storage disposal facilities (TSDFs), assessed by EPA's EJScreen using the count of hazardous waste facilities within 5 km of a census tract divided by the distance. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for TSDF proximity, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	EPA	2022	
+	UST_PctTractsOver75thPctile	Proximity to underground storage tanks (USTs), assessed by EPA's EJScreen using the county of USTs and leaking USTs. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for UST proximity, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	EPA	2022	
+	Wastewater_PctTractsOver75thPctile	Wastewater discharge, assessed by EPA's EJScreen using toxic concentrations at stream segments within 500 m of a census tract divided by the distance. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for wastewater discharge, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	EPA	2019	
+	ClimateLifeLoss_PctTractsOver75thPctile	Expected annual loss of life (fatalities and injuries) from 18 different climate hazards. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for climate hazards loss of life, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	DOE	2020	
+	Uninsured_PctTractsOver75thPctile	Percent of population without health insurance coverage. This score was originally at the tract level. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for uninsured population, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	DOE	2015-2020	
+	FoodDesert_PctTractsOver75thPctile	Share of neighborhood without access to affordable or good-quality fresh food operationlized as the percentage who live within 1/2 mile (urban) or 10 miles (rural) of a supermarket. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for food desert, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	DOE	2015-2020	
+	
+	
+	NoInternet_PctTractsOver75thPctile	Percent of households with no internet access. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for no internet, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	DOE	2015-2020	
+
+
+Jobs & Workforce	
+	Over30minCommute_PctTractsOver75thPctile	Percent of total population with a drive time to employment greater than or equal to 30 minutes. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for long commute, meaning that the tract scored higher (i.e., worse) than 75% of tracts in the country.	DOE	2015-2020	
+	AvgCommute_mins	Average travel time to work in minutes for workers 16 years and over	ACS 5-year estimate - table S0801	2017-2021	
+	TotalWorkforce	Total number of the employed population 16 years old and older	ACS 5-year estimate - table S2401	2017-2021	
+	FossilEmpRank_PctTractsOver75thPctile	Percent of total civilian jobs in the fossil energy sector. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for fossil employment, meaning that the tract scored higher than 75% of tracts in the country.	DOE	2015-2020	
+	CoalEmpRank_PctTractsOver75thPctile	Percent of total civilian jobs in the coal sector. We aggregated to the county level by providing the percent of census tracts within a county that scored over the 75th national percentile for coal employment, meaning that the tract scored higher than 75% of tracts in the country.	DOE	2015-2020	
+	PctEmpExtraction	Percent of employed people employed in mining, quarrying, and oil & gas extraction	USDA	2017-2021	
+	PctJobs_ManagementBusinessFinancial	Percent of employed people employed in management, business, and financial occupations	ACS 5-year estimate - table S2401	2017-2021	
+	PctJobs_ComputerEngineeringScience	Percent of employed people employed in computer, engineering, and science occupations	ACS 5-year estimate - table S2401	2017-2021	
+	PctJobs_EducationLegalArtsMedia	Percent of employed people employed in education, legal, arts, and media occupations	ACS 5-year estimate - table S2401	2017-2021	
+	PctJobs_Healthcare	Percent of employed people employed in healthcare occupations	ACS 5-year estimate - table S2401	2017-2021	
+	PctJobs_Service	Percent of employed people employed in service occupations	ACS 5-year estimate - table S2401	2017-2021	
+	PctJobs_SalesOffice	Percent of employed people employed in sales and office occupations	ACS 5-year estimate - table S2401	2017-2021	
+	PctJobs_NaturalResourcesConstructionMaintenance	Percent of employed people employed in natural resources, construction, and maintenance occupations	ACS 5-year estimate - table S2401	2017-2021	
+	PctJobs_ProductionTransportation	Percent of employed people employed in production and transportation occupations	ACS 5-year estimate - table S2401	2017-2021	
+
+
+Energy Infrastructure & Potential	
+	OutageNumber	Number of power outage events that occurred for all census tracts in each county from 2017-2020	DOE	2017-2020	
+	OutageDuration	Average duration of power outage events (in minutes) that occurred for all census tracts in each county from 2017-2020	DOE	2017-2020	
+	NameplateCapacity_Total_MW	Total nameplate capacity in MW across all generators and technologies at electric power plants with 1 MW or greater combined capacity	Form EIA-860	2022	
+	NameplateCapacity_X_MW	Total nameplate capacity by technology in MW. Possible technologies include: wind, solar PV, batteries, landfill gas, natural gas CC (combined cycle), natural gas CT (combustion turbine), natural gas ST (steam turbine), natural gas ICE (internal combustion engine), petroleum liquids, coal (conventional steam coal), and hydro (conventional hydroelectric).	Form EIA-860	2022	
+	Pct_NameplateCapacity_X	Percent of nameplate capacity by technology, calculated by dividing a technology's total nameplate capacity (NameplateCapacity_X_MW) by the county's total nameplate capacity (NameplateCapacity_Total_MW).	Form EIA-860	2022	
+	Oil_BBL_2022	Texas and New Mexico oil production from January 2022 - December 2022 (in BBL - barrels)	The Railroad Commission of Texas	2022	
+			New Mexico Oil Conservation District	2022	
+	Oil_Condensate_BBL_2022	Texas condensate oil production from January 2022 - December 2022 (in BBL - barrels)	The Railroad Commission of Texas	2022	
+	Gas_Casinghead_MCF_2022	Texas casinghead gas production from January 2022 - December 2022 (in MCF - one thousand cubic feet)	The Railroad Commission of Texas	2022	
+	Gas_GW_MCF_2022	Texas gas production from January 2022 - December 2022 (in MCF - one thousand cubic feet)	The Railroad Commission of Texas	2022	
+	Gas_MCF_2022	New Mexico gas production from January 2022 - December 2022 (in MCF - one thousand cubic feet)	New Mexico Oil Conservation District	2022	
+	
+	ElectricalPowerTransmissionLine_km	Kilometers of electrical power transmission lines by county			
+	ElectricalPowerTransmissionLine_miles	Miles of electrical power transmission lines by county			
+	CrudeOilPipeline_km	Kilometers of crude oil pipelines by county			
+	CrudeOilPipeline_miles	Miles of crude oil pipelines by county			
+	PetroleumPipeline_km	Kilometers of petroleum pipelines by county			
+	PetroleumPipeline_miles	Miles of petroleum pipelines by county			
+	NaturalGasPipeline_km	Kilometers of natural gas pipelines by county			
+	NaturalGasPipeline_miles	Miles of natural gas pipelines by county			
+	CO2Pipelines_km	Kilometers of carbon dioxide (CO2) pipelines by county			
+	CO2Pipelines_miles	Miles of carbon dioxide (CO2) pipelines by county	
+	
+	UtilityPV_TechPotential	Technical potential for utility-scale solar by county. Note: Technical potential is a theoretical upper bound for generation potential that considers resource and land availability. It does not consider economic or market feasibility, nor does it consider existing systems.	NREL	2020	
+	ResidentialPV_TechPotential	Technical potential for rooftop solar on residential buildings by county. Note: Technical potential is a theoretical upper bound for generation potential that considers resource and rooftop availability. It does not consider economic or market feasibility, nor does it consider existing systems.	NREL	2020	
+	CommercialPV_TechPotential	Technical potential for rooftop solar on commercial buildings by county. Note: Technical potential is a theoretical upper bound for generation potential that considers resource and rooftop availability. It does not consider economic or market feasibility, nor does it consider existing systems.	NREL	2020	
+	LandbasedWind_TechPotential	Technical potential for utility-scale, onshore wind by county. Note: Technical potential is a theoretical upper bound for generation potential that considers resource and land availability. It does not consider economic or market feasibility, nor does it consider existing systems.	NREL	2020	
+	DistributedWind_TechPotential	Technical potential for residential and commercial behind-the-meter wind by county. Note: Technical potential is a theoretical upper bound for generation potential that considers resource and land availability. It does not consider economic or market feasibility, nor does it consider existing systems.	NREL	2020	
+	GeothermalHeatPump_EconPotential	Economic potential for geothermal heat pumps (GHPs), also known as ground-source heat pumps, which can provide a renewable source of space conditioning and water heating in buildings. Note: Economic potential is modeled in a conservative, business-as-usual case, which assumes low technology development and conservative customer adoption rates. GHP economic potential represents the sum of the potential GHP applications that result in positive net present value of the investment for each county.	NREL	2020	
+
+
+Data Type by Columns
+---------------------
+(total 128 columns)
+Data columns:
+ #    Column                                           Dtype  
+---   ------                                           -----  
+ 0    CountyFIPS                                       int64  
+ 1    State                                            object 
+ 2    County                                           object 
+ 3    PopulationSize                                   int64  
+ 4    PopulationChangeRate_2010_2020                   float64
+ 5    PopulationChangeRate_2020_2021                   float64
+ 6    GDP_2021_thousands                               int64  
+ 7    GDP_staterank2021                                int64  
+ 8    GDP_pctchange_2020_2021                          float64
+ 9    GDP_pctchange_staterank2021                      int64  
+ 10   TribeName                                        object 
+ 11   TribeAcres                                       float64
+ 12   DAC_StatusYES_NumTracts                          int64  
+ 13   DAC_StatusYES_PctTracts                          float64
+ 14   SVI_OverallRanking                               float64
+ 15   SVI_Socioeconomic                                float64
+ 16   SVI_HouseholdCharacteristics                     float64
+ 17   SVI_MinorityStatus                               float64
+ 18   SVI_HousingTransportation                        float64
+ 19   PctAge65andOlder                                 float64
+ 20   PctUnderAge18                                    float64
+ 21   PctBlackNonHispanic                              float64
+ 22   PctHispanic                                      float64
+ 23   PctNativeAmerican                                float64
+ 24   PctWhiteNonHispanic                              float64
+ 25   PctMultipleRace                                  float64
+ 26   PctLimitedEnglishSpeaking                        float64
+ 27   PctForeignBorn                                   float64
+ 28   PctLessThanHS                                    float64
+ 29   PctHSDiplomaOnly                                 float64
+ 30   PctSomeCollege                                   float64
+ 31   PctAssocDegree                                   float64
+ 32   PctCollegePlus                                   float64
+ 33   MedianHHInc                                      float64
+ 34   PovertyRate                                      float64
+ 35   EnergyBurden                                     int64  
+ 36   UnemploymentRate                                 float64
+ 37   Literacy_AvgScore                                float64
+ 38   Literacy_PctLevel1                               float64
+ 39   Literacy_PctLevel2                               float64
+ 40   Literacy_PctLevel3                               float64
+ 41   Numeracy_AvgScore                                float64
+ 42   Numeracy_PctLevel1                               float64
+ 43   Numeracy_PctLevel2                               float64
+ 44   Numeracy_PctLevel3                               float64
+ 45   HealthRank_HealthOutcomes                        object 
+ 46   HealthRank_LengthOfLife                          object 
+ 47   HealthRank_QualityOfLife                         object 
+ 48   HealthRank_HealthFactors                         object 
+ 49   HealthRank_HealthBehaviors                       object 
+ 50   HealthRank_ClinicalCare                          object 
+ 51   HealthRank_SocialEconomicFactors                 object 
+ 52   HealthRank_PhysicalEnvironment                   object 
+ 53   Cancer_PctTractsOver75thPctile                   float64
+ 54   Respiratory_PctTractsOver75thPctile              float64
+ 55   DieselPM_PctTractsOver75thPctile                 float64
+ 56   PM25_PctTractsOver75thPctile                     int64  
+ 57   Ozone_PctTractsOver75thPctile                    float64
+ 58   LeadPaint_PctTractsOver75thPctile                float64
+ 59   NPL_PctTractsOver75thPctile                      float64
+ 60   RMP_PctTractsOver75thPctile                      float64
+ 61   TSDF_PctTractsOver75thPctile                     float64
+ 62   UST_PctTractsOver75thPctile                      float64
+ 63   Wastewater_PctTractsOver75thPctile               float64
+ 64   ClimateLifeLoss_PctTractsOver75thPctile          float64
+ 65   Uninsured_PctTractsOver75thPctile                float64
+ 66   FoodDesert_PctTractsOver75thPctile               float64
+ 67   NoInternet_PctTractsOver75thPctile               float64
+ 68   Over30minCommute_PctTractsOver75thPctile         float64
+ 69   AvgCommute_mins                                  object 
+ 70   TotalWorkforce                                   int64  
+ 71   FossilEmpRank_PctTractsOver75thPctile            int64  
+ 72   CoalEmpRank_PctTractsOver75thPctile              int64  
+ 73   PctEmpExtraction                                 float64
+ 74   PctJobs_ManagementBusinessFinancial              float64
+ 75   PctJobs_ComputerEngineeringScience               float64
+ 76   PctJobs_EducationLegalArtsMedia                  float64
+ 77   PctJobs_Healthcare                               float64
+ 78   PctJobs_Service                                  float64
+ 79   PctJobs_SalesOffice                              float64
+ 80   PctJobs_NaturalResourcesConstructionMaintenance  float64
+ 81   PctJobs_ProductionTransportation                 float64
+ 82   OutageNumber                                     int64  
+ 83   OutageDuration                                   int64  
+ 84   NameplateCapacity_Total_MW                       float64
+ 85   NameplateCapacity_Wind_MW                        float64
+ 86   Pct_NameplateCapacity_Wind                       float64
+ 87   NameplateCapacity_SolarPV_MW                     float64
+ 88   Pct_NameplateCapacity_SolarPV                    float64
+ 89   NameplateCapacity_Batteries_MW                   float64
+ 90   Pct_NameplateCapacity_Batteries                  float64
+ 91   NameplateCapacity_LandfillGas_MW                 float64
+ 92   Pct_NameplateCapacity_LandfillGas                float64
+ 93   NameplateCapacity_NaturalGasCC_MW                float64
+ 94   Pct_NameplateCapacity_NaturalGasCC               float64
+ 95   NameplateCapacity_NaturalGasCT_MW                float64
+ 96   Pct_NameplateCapacity_NaturalGasCT               float64
+ 97   NameplateCapacity_NaturalGasST_MW                float64
+ 98   Pct_NameplateCapacity_NaturalGasST               float64
+ 99   NameplateCapacity_NaturalGasICE_MW               float64
+ 100  Pct_NameplateCapacity_NaturalGasICE              float64
+ 101  NameplateCapacity_PetroleumLiquids_MW            float64
+ 102  Pct_NameplateCapacity_PetroleumLiquids           float64
+ 103  NameplateCapacity_Coal_MW                        float64
+ 104  Pct_NameplateCapacity_Coal                       float64
+ 105  NameplateCapacity_Hydro_MW                       int64  
+ 106  Pct_NameplateCapacity_Hydro                      float64
+ 107  Oil_BBL_2022                                     float64
+ 108  Oil_Condensate_BBL_2022_TX                       float64
+ 109  Gas_Casinghead_MCF_2022_TX                       float64
+ 110  Gas_GW_MCF_2022_TX                               float64
+ 111  Gas_MCF_2022_NM                                  float64
+ 112  ElectricalPowerTransmissionLine_km               float64
+ 113  ElectricalPowerTransmissionLine_miles            float64
+ 114  CrudeOilPipeline_km                              float64
+ 115  CrudeOilPipeline_miles                           float64
+ 116  PetroleumPipeline_km                             float64
+ 117  PetroleumPipeline_miles                          float64
+ 118  NaturalGasPipeline_km                            float64
+ 119  NaturalGasPipeline_miles                         float64
+ 120  CO2Pipelines_km                                  float64
+ 121  CO2Pipelines_miles                               float64
+ 122  UtilityPV_TechPotential                          float64
+ 123  ResidentialPV_TechPotential                      float64
+ 124  CommercialPV_TechPotential                       float64
+ 125  LandbasedWind_TechPotential                      float64
+ 126  DistributedWind_TechPotential                    float64
+ 127  GeothermalHeatPump_EconPotential                 float64
+
+###
