@@ -1,5 +1,5 @@
-# Capstone Project for the AI ML course
 ## Professional Certificate in Machine Learning and Artificial Intelligence - Berkley-Hass Program
+## Capstone Project Report
 
 # Renewable Energy Project Opportunities in the Texas Permian Basin
 ## - Supervised Learning: Linear Regression Analysis Workbook
@@ -58,7 +58,6 @@ Methodology
     
     e) Compare results for all models
 <br>
-Note: For linear regression analysis we use the entire dataset for the U.S. Permian Basin (Texas and New Mexico counties) to understand the relationship of NoInternet_PctTractsOver75thPctile to the socio-eceonomic factors in the region.  
 <br>
 
 
