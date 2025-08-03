@@ -1,6 +1,6 @@
 ## Professional Certificate in Machine Learning and Artificial Intelligence - Berkley-Hass Program
 ### Capstone Project Report
-(A Capstone Project for AI ML Certificate Course (July 2025) 
+(A Capstone Project for AI ML Certificate Course (July 2025)  
 **Author: Muhammad Zafar**
 
 ### Report Title: Renewable Energy Project Opportunities in the Texas Permian Basin
@@ -82,14 +82,14 @@ What suggestions do you have for next steps?
 
 Project Outline
 ---------------
-- [Link to notebook 1]()
-- [Link to notebook 2]()
-- [Link to notebook 3]()
+- [https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_EDA_analysis.ipynb](Exploratory Data Analysis Notebook)
+- [https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_regression.ipynb](Supervised Learning - Regression Notebook)
+- [Link to notebook 3](Executive Presentation)
 
 
 ##### Contact and Further Information
-Content in this repository is the property of the author. Please do NOT duplicate without getting priori authorization from the author.
+Content in this repository is the property of the author. Please do NOT duplicate without getting priori authorization from the author.  
 Contact: www.linkedin.com/in/muhammad-usman-zafar-36b9199
 
-#### END ####
+#### END OF REPORT ####
 
