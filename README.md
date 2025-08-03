@@ -13,7 +13,7 @@ Renewable energy projects, like wind and solar, offer plenty of investment oppor
 
 **This project will explore investment opportunities for renewable energy projects in the Permian Basin area in Texas, USA.**
 
-**Internet access is critical for long-term viability of deploying renewable energy projects in an area.** Internet access allows the local population to learn and develop knowledge and skills for jobs in the renewable industry and also to keep updating skills as the industry develops. To attract new and younger workers to the area, good internet access is normally deemed necessary for investment in renewable energy projects. Lack of internet access can be a negative factor for investment since it impedes worker learning and development.
+**Internet access** is critical for long-term viability of deploying renewable energy projects in an area. Internet access allows the local population to learn and develop knowledge and skills for jobs in the renewable industry and also to keep updating skills as the industry develops. To attract new and younger workers to the area, good internet access is normally deemed necessary for investment in renewable energy projects. Lack of internet access can be a negative factor for investment since it impedes worker learning and development.
 
 
 Research Question (Primary)
@@ -82,9 +82,9 @@ What suggestions do you have for next steps?
 
 Project Outline
 ---------------
-- [https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_EDA_analysis.ipynb](Exploratory Data Analysis Notebook)
-- [https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_regression.ipynb](Supervised Learning - Regression Notebook)
-- [Link to notebook 3](Executive Presentation)
+- [Exploratory Data Analysis Noteboo](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_EDA_analysis.ipynb)
+- [Supervised Learning - Regression Notebook](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_regression.ipynb)
+- [Executive Presentation](Link)
 
 
 ##### Contact and Further Information
