@@ -1,8 +1,9 @@
 ## Professional Certificate in Machine Learning and Artificial Intelligence - Berkley-Hass Program
-## Capstone Project Report
-(A Capstone Project for AI ML Certificate Course (July 2025) - Muhammad Zafar
+### Capstone Project Report
+(A Capstone Project for AI ML Certificate Course (July 2025)
+**Author: Muhammad Zafar**
 
-## Title: Renewable Energy Project Opportunities in the Texas Permian Basin
+### Report Title: Renewable Energy Project Opportunities in the Texas Permian Basin
 
 ![text](images/project_header_image.png)
 
@@ -14,6 +15,16 @@ This project will explore investment opportunities for renewable energy projects
 
 Internet access is critical for long-term viability of deploying renewable energy projects in an area. Internet access allows the local population to learn and develop knowledge and skills for jobs in the renewable industry and also to keep updating skills as the industry develops. To attract new and younger workers to the area, good internet access is normally deemed necessary for investment in renewable energy projects. Lack of internet access can be a negative factor for investment since it impedes worker learning and development.
 
+
+Research Question (Primary)
+---------------------------
+#### Which counties in the Permian Basin in the state of Texas are best suited for investment in renewable energy projects and why? What type of projects are suitable to develop in those areas? 
+
+Secondary Question:
+-------------------
+#### Using the socio-economic data of the Permian Basin identify top factors that contribute to the lack of internet access for workers in a given county. How may this impact the decision to invest in a renewable energy project in that county?
+<br>
+<br>
 
 
 Data Sources
@@ -59,4 +70,28 @@ Methodology
 <br>
 <br>
 
+
+
+Results
+--------
+What did your research find?
+
+
+Recommendations
+---------------
+What suggestions do you have for next steps?
+
+
+Project Outline
+---------------
+- [Link to notebook 1]()
+- [Link to notebook 2]()
+- [Link to notebook 3]()
+
+
+##### Contact and Further Information
+Content in this repository is the property of the author. Please do NOT duplicate without getting priori authorization from the author.
+Contact: www.linkedin.com/in/muhammad-usman-zafar-36b9199
+
+#### END ####
 
