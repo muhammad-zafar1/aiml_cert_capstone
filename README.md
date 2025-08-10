@@ -68,9 +68,14 @@ Methodology
     e) Compare results for all models
 <br>
 <br>
-
-
-
+  
+  
+Project Outline
+---------------
+- [Exploratory Data Analysis Notebook - ses_data_permian_counties_EDA_analysis.ipynb](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_EDA_analysis.ipynb)
+- [Supervised Learning - Regression Notebook - ses_data_permian_counties_regression.ipynb](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_regression.ipynb)
+  
+  
 Exploratory Data Analysis
 -------------------------
 
@@ -237,12 +242,12 @@ large_col_set = \
 ![text](images/reg_lasso2_features_list.png)
 
 
-**Model Results Summary Table**
+**Model Results Summary Table**  
 This table summarizes the model performance based on train and test mean-squared errors (MSE).
 ![text](images/reg_model_results_summary.png)
   	
   
-**Best Model features - Scaled Ridge Regression (with alpha =10.0)**  
+**Best Model features - Scaled Ridge Regression #5 (with alpha = 10.0)**  
 Features for the best model and their coefficients --
   
 ```  
@@ -258,7 +263,8 @@ Features(['MedianHHInc', 'PopulationChangeRate_2010_2020', 'SVI_Socioeconomic',
        'SVI_MinorityStatus', 'PctAge65andOlder', 'DAC_StatusYES_PctTracts'])
 ```
 ![text](images/reg_best_model_features.png)
-- Top 4 negative features and bottom 3 positive features are important determinants for internet access in a county in the Permian Basin.	  
+- Top-4 negative features and bottom-3 positive features are important determinants for internet access in a county in the Permian Basin.
+- Projects should evaluate these factors when determining where internet access will likely be in the future.	  
   
   
 Recommendations
@@ -274,6 +280,7 @@ Target these types of renewable energy projects:
 - So it is recommended to spend 70% of investments in UtilityPV projects and 30% in LandbasedWind projects to harness both Opportunities in the region.
   
   
+Projects should evaluate these factors when determining where internet access will likely be in the future.	    
 These factors determine good internet access in a county in the Permian Basin:
 - MedianHHInc -- high median income per family
 - SVI_Socioeconomic -- low on SVI index
@@ -286,15 +293,10 @@ These factors determine poor (low) internet access in a county in the Permian Ba
 - SVI_MinorityStatus -- high SVI minority status
 - PctAge65andOlder -- higher percentage of older population in the county
 ![text](images/reg_best_model_features.png)
-
+  
+  
 Further work:  
 - Perform financial cost/benefit & ROI analysis and choose projects with highest ROIs over a 10-year horizon.
-
-
-Project Outline
----------------
-- [Exploratory Data Analysis Notebook - ses_data_permian_counties_EDA_analysis.ipynb](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_EDA_analysis.ipynb)
-- [Supervised Learning - Regression Notebook - ses_data_permian_counties_regression.ipynb](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_regression.ipynb)
 
 
 #### Contact and Further Information:
