@@ -73,12 +73,6 @@ Methodology
 
 Exploratory Data Analysis
 -------------------------
-What did your research find?
-
-TODO
--- add EDA summary
--- add Internet presence summary
--- further details & Charts in the Presentation
 
 The U.S. Permian Basin is an area of land that spreads across the Western Texas and Eastern New Mexico states. The area comprises of 66 counties out of which 60 are in the state of Texas and 6 in New Mexico. First we explore the characteristics of the counties that comprise the U.S. Permian Basin.  
 Chart below shows county population size by counties. Largest county is El Paso with 867.9K.  
@@ -136,54 +130,76 @@ Similar analysis for LandbasedWind projects. Top 3 counties are Chaves, Pecos an
 - Shows geo-mapped counties with the highest potential for LandbasedWind projects.
 ![text](images/eda_landbasedwind_counties_2.png)
   
-- Overall, these counties should be targeted for UtiltiyPV and LandbasedWind projects:
-- UtilityPV: Chaves, Lea, Pecos, Hudspeth, Eddy
-- LandbasedWind: Chaes, Pecos, Otero, Brewster, Hudspeth
+Overall, these counties should be targeted for UtiltiyPV and LandbasedWind projects:
+- **UtilityPV: Chaves, Lea, Pecos, Hudspeth, Eddy**
+- **LandbasedWind: Chaes, Pecos, Otero, Brewster, Hudspeth**
   
 
 Understanding what factors determine Internet Access for a county
 -----------------------------------------------------------------
-Using Supervised learning methods we analyzed what factors (characteristics) determine internet access in a county.
+Using Supervised learning methods we analyzed what factors (characteristics) that determine internet access in a county.
+This is important since access to internet will allow workers to get the required training and attract more families (workers) to move to the area for work Opportunities.
 
        `Dependent variable: NoInternet_PctTractsOver75thPctile`
        `Independent variables: socio-economic variables in the dataset  (selected columns)`
 	   
 **Correlation Analysis & PairPlots Across all factors**
-
+  
+- Chart below shows correlation analysis across all factors. Shows some variables do correlate positive and negative with each other.
 ![text](images/reg_corr_matrix_all.png)
+  
+- Using filter of > 0.4, correlation matrix now highlights the variables that are important for regression analysis.
 ![text](images/reg_corr_matrix_filter1.png)
+  
+- These are the selected variables for regression analysis below:
 ![text](images/reg_corr_cols_high_low.png)
+  
+- Pair-plots across all variables to show correlation
 ![text](images/sns-pairplot-1.png)
+  
+- Pair-plots across NoInternet_PctTractsOver75thPctile with selected variables.
 ![text](images/sns_pairplot_2_NoInternet_PctTractsOver75thPctile.png)
-
+  
+  
+  
 **Linear Regresion Models (selected columns)**
 
-These columns were selected based on the correlation analysis across all columns that had a higher positive or negative correlation with the NoInternet_PctTractsOver75thPctile column.
-
+These columns were selected based on the correlation analysis and pair-plots across all columns that had a higher positive or negative correlation with the NoInternet_PctTractsOver75thPctile column (target variable).
+```
 select_cols = ['PopulationSize', 'PopulationChangeRate_2010_2020', 'PopulationChangeRate_2020_2021', 'GDP_2021_thousands', 'DAC_StatusYES_PctTracts', \
     'SVI_OverallRanking', 'SVI_Socioeconomic', 'SVI_HouseholdCharacteristics', 'SVI_MinorityStatus', 'PctAge65andOlder', 'PctUnderAge18', 'PctHispanic', 'MedianHHInc', \
     'PovertyRate', 'UnemploymentRate']
 
 y = data_clean[['NoInternet_PctTractsOver75thPctile']]
 X = data_clean[select_cols]
+# use 70% of dataset for training, 30% for testing the model.
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=randval)
+```
 
 
-['PopulationSize',
- 'PopulationChangeRate_2010_2020',
- 'PopulationChangeRate_2020_2021',
- 'GDP_2021_thousands',
- 'DAC_StatusYES_PctTracts',
- 'SVI_OverallRanking',
- 'SVI_Socioeconomic',
- 'SVI_HouseholdCharacteristics',
- 'SVI_MinorityStatus',
- 'PctAge65andOlder',
- 'PctUnderAge18',
- 'PctHispanic',
- 'MedianHHInc',
- 'PovertyRate',
- 'UnemploymentRate']
+ 
+Models Built:
+Linear Regression
+Scaled Ridge Regression
+- Add MSE Chart
+- feature and coeff
+Lasso Scaled Regression model
+- feature and coeff
+- MSE Chart
+Lasso #2: larger col. set
+- feature and coeff
+- MSE Chart
+
+![text](images/reg_scalar_ridge_pic.png)
+
+![text](images/reg_scalar_ridge_mse_chart.png)
+![text](images/reg_scalar_ridge_features.png)
+
+![text](images/reg_lasso1_mse_chart.png)
+![text](images/reg_lasso1_features_list.png)
+  
+  
+```
  
 large_col_set = \
 ['PopulationSize',
@@ -218,39 +234,21 @@ large_col_set = \
  'LandbasedWind_TechPotential',
  'DistributedWind_TechPotential',
  'GeothermalHeatPump_EconPotential']
- 
-Models Built:
-Linear Regression
-Scaled Ridge Regression
-- Add MSE Chart
-- feature and coeff
-Lasso Scaled Regression model
-- feature and coeff
-- MSE Chart
-Lasso #2: larger col. set
-- feature and coeff
-- MSE Chart
-
-![text](images/reg_scalar_ridge_pic.png)
-
-![text](images/reg_scalar_ridge_mse_chart.png)
-![text](images/reg_scalar_ridge_features.png)
-
-![text](images/reg_lasso1_mse_chart.png)
-![text](images/reg_lasso1_features_list.png)
-
+```
+- Using larger set of columns and running Lasso Regression here are the charts: 
 ![text](images/reg_lasso2_mse_chart.png)
 ![text](images/reg_lasso2_features_list.png)
 
-![text](images/xxx.png)
 
-
-**Model results summary table**
+**Model Results Summary Table**
+This table summarizes the model performance based on train and test mean-squared errors (MSE).
 ![text](images/reg_model_results_summary.png)
-	
-ADD TEXT HERE
-
+  	
+  
 **Best Model features - Scaled Ridge Regression (with alpha =10.0)**  
+Features for the best model and their coefficients --
+  
+```  
 array([[-7.96303713, -4.70005285, -5.95631507, -3.21940584, -1.75589309,
          1.9177168 ,  2.33335125,  2.83934251,  2.16379391,  2.92041422,
          2.445844  ,  3.52093759,  4.45729818,  4.44419837,  6.65594881]])
@@ -260,21 +258,35 @@ Features(['MedianHHInc', 'PopulationChangeRate_2010_2020', 'SVI_Socioeconomic',
        'SVI_HouseholdCharacteristics', 'PovertyRate', 'NaturalGasPipeline_km',
        'UnemploymentRate', 'PctHispanic', 'CrudeOilPipeline_km',
        'SVI_MinorityStatus', 'PctAge65andOlder', 'DAC_StatusYES_PctTracts'])
-
+```
 ![text](images/reg_best_model_features.png)
 	  
 
 Recommendations
 ---------------
-What suggestions do you have for next steps?
+Overall, these counties should be targeted for UtiltiyPV and LandbasedWind projects:
+- UtilityPV: Chaves, Lea, Pecos, Hudspeth, Eddy
+- LandbasedWind: Chaes, Pecos, Otero, Brewster, Hudspeth
 
-TODO
--- Target these counties
+Target these types of renewable energy projects:
+UtilityPV - has highest total potential with median project potential of XX MW
+LandbasedWind - second highest total potential with median project potential of XX MW
 
--- Target these types of projects
+These factors determine good internet access in a county in the Permian Basin:
+- MedianHHInc -- high median income per family
+- SVI_Socioeconomic -- low on SVI index
+- PopulationChangeRate_2010_2020 -- increasing population over time
+- ElectricalPowerTransmissionLine_km -- long electrical transmission lines
+  
+  
+These factors determine poor (low) internet access in a county in the Permian Basin:
+- DAC_StatusYES_PctTracts -- high DAC status
+- SVI_MinorityStatus -- high SVI minority status
+- PctAge65andOlder -- higher percentage of older population in the county
+![text](images/reg_best_model_features.png)
 
--- Further work:
-Perform financial cost/benefit & ROI analysis and choose projects with highest ROIs over a 10-year or more horizon.
+Further work:
+Perform financial cost/benefit & ROI analysis and choose projects with highest ROIs over a 10-year horizon.
 
 
 Project Outline
