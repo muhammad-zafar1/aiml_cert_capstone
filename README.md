@@ -175,20 +175,16 @@ X = data_clean[select_cols]
 # use 70% of dataset for training, 30% for testing the model.
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=randval)
 ```
-
-
- 
+  
+   
 Models Built:
-Linear Regression
-Scaled Ridge Regression
-- Add MSE Chart
-- feature and coeff
-Lasso Scaled Regression model
-- feature and coeff
-- MSE Chart
-Lasso #2: larger col. set
-- feature and coeff
-- MSE Chart
+- Linear Regression
+- Scaled Ridge Regression
+- Lasso Scaled Ridge Regression model -- to select important features
+- Scaled Ridge Regression (with Lasso-identified features)
+- Lasso Scaled Ridge Regression model-v2: with larger column set
+- Scaled Ridge Regression (with Lasso-identified features v2)
+
 
 ![text](images/reg_scalar_ridge_pic.png)
 
@@ -200,7 +196,8 @@ Lasso #2: larger col. set
   
   
 ```
- 
+# Now use this larger columns set to identify important columns using Lasso:
+  
 large_col_set = \
 ['PopulationSize',
  'PopulationChangeRate_2010_2020',
@@ -252,6 +249,7 @@ Features for the best model and their coefficients --
 array([[-7.96303713, -4.70005285, -5.95631507, -3.21940584, -1.75589309,
          1.9177168 ,  2.33335125,  2.83934251,  2.16379391,  2.92041422,
          2.445844  ,  3.52093759,  4.45729818,  4.44419837,  6.65594881]])
+		 
 Features(['MedianHHInc', 'PopulationChangeRate_2010_2020', 'SVI_Socioeconomic',
        'ElectricalPowerTransmissionLine_km',
        'GeothermalHeatPump_EconPotential', 'PetroleumPipeline_km',
@@ -260,18 +258,22 @@ Features(['MedianHHInc', 'PopulationChangeRate_2010_2020', 'SVI_Socioeconomic',
        'SVI_MinorityStatus', 'PctAge65andOlder', 'DAC_StatusYES_PctTracts'])
 ```
 ![text](images/reg_best_model_features.png)
-	  
-
+- Top 4 negative features and bottom 3 positive features are important determinants for internet access in a county in the Permian Basin.	  
+  
+  
 Recommendations
 ---------------
 Overall, these counties should be targeted for UtiltiyPV and LandbasedWind projects:
 - UtilityPV: Chaves, Lea, Pecos, Hudspeth, Eddy
 - LandbasedWind: Chaes, Pecos, Otero, Brewster, Hudspeth
 
-Target these types of renewable energy projects:
-UtilityPV - has highest total potential with median project potential of XX MW
-LandbasedWind - second highest total potential with median project potential of XX MW
-
+Target these types of renewable energy projects:  
+- UtilityPV - has highest total potential with median project potential of 150 MW. Total potential 14000 MW for all counties.
+- LandbasedWind - second highest total potential with median project potential of 16.8 MW. Total potential 1800 MW for all counties.
+- UtilityPV has almost 10X more potential per project than LandbasedWind projects.
+- So it is recommended to spend 70% of investments in UtilityPV projects and 30% in LandbasedWind projects to harness both Opportunities in the region.
+  
+  
 These factors determine good internet access in a county in the Permian Basin:
 - MedianHHInc -- high median income per family
 - SVI_Socioeconomic -- low on SVI index
@@ -285,8 +287,8 @@ These factors determine poor (low) internet access in a county in the Permian Ba
 - PctAge65andOlder -- higher percentage of older population in the county
 ![text](images/reg_best_model_features.png)
 
-Further work:
-Perform financial cost/benefit & ROI analysis and choose projects with highest ROIs over a 10-year horizon.
+Further work:  
+- Perform financial cost/benefit & ROI analysis and choose projects with highest ROIs over a 10-year horizon.
 
 
 Project Outline
