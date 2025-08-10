@@ -269,6 +269,9 @@ Features(['MedianHHInc', 'PopulationChangeRate_2010_2020', 'SVI_Socioeconomic',
   
 Recommendations
 ---------------
+Primary Question:  
+Which counties in the Permian Basin in the state of Texas are best suited for investment in renewable energy projects and why? What type of projects are suitable to develop in those areas?  
+Response:  
 Overall, these counties should be targeted for UtiltiyPV and LandbasedWind projects:
 - UtilityPV: Chaves, Lea, Pecos, Hudspeth, Eddy
 - LandbasedWind: Chaes, Pecos, Otero, Brewster, Hudspeth
@@ -279,7 +282,10 @@ Target these types of renewable energy projects:
 - UtilityPV has almost 10X more potential per project than LandbasedWind projects.
 - So it is recommended to spend 70% of investments in UtilityPV projects and 30% in LandbasedWind projects to harness both Opportunities in the region.
   
-  
+
+Secondary Question:  
+Using the socio-economic data of the Permian Basin identify top factors that contribute to the lack of internet access for workers in a given county. How may this impact the decision to invest in a renewable energy project in that county?
+Response:    
 Projects should evaluate these factors when determining where internet access will likely be in the future.	    
 These factors determine good internet access in a county in the Permian Basin:
 - MedianHHInc -- high median income per family
