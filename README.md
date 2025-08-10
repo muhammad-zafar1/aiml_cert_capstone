@@ -81,6 +81,23 @@ TODO
 
 -- further details & Charts in the Presentation
 
+![text](images/eda_pop_size_chart_1.png)
+![text](images/eda_pop_size_chart_2.png)
+![text](images/eda_windtech_potential_1.png)
+![text](images/eda_windtech_potential_2.png)
+![text](images/eda_histogram_wind_1.png)
+![text](images/eda_histogram_pv_1.png)
+![text](images/eda_tech_potential_totals.png)
+![text](images/eda_utilitypv_boxplot.png)
+![text](images/eda_landbasedwind_boxplot.png)
+![text](images/eda_utlitypv_counties.png)
+![text](images/eda_utlitypv_counties_2.png)
+![text](images/eda_utlitypv_counties_all_3.png)
+![text](images/eda_landbasedwind_counties.png)
+![text](images/eda_landbasedwind_counties_2.png)
+
+ADD TEXT HERE
+
 
 Recommendations
 ---------------
@@ -102,8 +119,8 @@ Project Outline
 - [Executive Presentation](Link)
 
 
-##### Contact and Further Information
-Content in this repository is the property of the author. Please do NOT duplicate without getting priori authorization from the author.  
+#### Contact and Further Information:
+Content in this repository is the property of the author. Please do NOT duplicate without getting prior authorization from the author.  
 Contact: www.linkedin.com/in/muhammad-usman-zafar-36b9199
 
 #### END OF REPORT ####
