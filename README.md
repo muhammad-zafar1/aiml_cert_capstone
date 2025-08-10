@@ -106,19 +106,40 @@ Table and chart below shows technical potential of rewnewable energy projects in
 - Next is distributed wind (342 MW) and CommercialPV (11.6 MW). 
 - Clearly the top two areas to invest with the highest potential is UtilityPV and LandbasedWind technologies.
 ![text](images/eda_tech_potential_totals.png)
+ 
+ - This chart breaks down the LandbasedWind projects potential by size and plots against the electrical transmission line length in the county.
+ - Projects with high LandbasedWind potential (blue dots) also have long transmission lines. This is important factor in determining the location of such projects, since energy must be transmitted via those lines into the consumer areas (counties). Also high technical potential projects are mostly in counties with low population size which means energy has to be transmitted to areas where they are needed most.  
+ 
 ![text](images/eda_windtech_potential_1.png)
 ![text](images/eda_windtech_potential_2.png)
 ![text](images/eda_histogram_wind_1.png)
 ![text](images/eda_histogram_pv_1.png)
+  
+- UtlityPV median project potential is 150 MW with a maximum potential of 831 MW in some areas.
+- LandbasedWind median project potential is 16.8 MW (almost 10X less than UtilityPV potential) with maximum of 109 MW.
+- Overall, UtilityPV has the highest potential for investors which should be the area to invest for new projects.
 ![text](images/eda_utilitypv_boxplot.png)
 ![text](images/eda_landbasedwind_boxplot.png)
+  
+- These are the counties with the higest UtlityPV potential.  Top 3 counties are: Chaves, Lea, Pecos counties.
 ![text](images/eda_utlitypv_counties.png)
+  
+- Shows geo-mapped counties with the highest potential for UtilityPV projects.
 ![text](images/eda_utlitypv_counties_2.png)
+  
+- Most counties have over 100 MW of technical Potential for UtilityPV projects in the Permian Basin.
 ![text](images/eda_utlitypv_counties_all_3.png)
+  
+Similar analysis for LandbasedWind projects. Top 3 counties are Chaves, Pecos and Otero. 
 ![text](images/eda_landbasedwind_counties.png)
+  
+- Shows geo-mapped counties with the highest potential for LandbasedWind projects.
 ![text](images/eda_landbasedwind_counties_2.png)
-
-ADD TEXT HERE
+  
+- Overall, these counties should be targeted for UtiltiyPV and LandbasedWind projects:
+- UtilityPV: Chaves, Lea, Pecos, Hudspeth, Eddy
+- LandbasedWind: Chaes, Pecos, Otero, Brewster, Hudspeth
+  
 
 Understanding what factors determine Internet Access for a county
 -----------------------------------------------------------------
