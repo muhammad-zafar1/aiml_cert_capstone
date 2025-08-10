@@ -98,8 +98,8 @@ TODO
 
 ADD TEXT HERE
 
-Understanding what factors determine good Internet Access for a county
-----------------------------------------------------------------------
+Understanding what factors determine Internet Access for a county
+-----------------------------------------------------------------
 Using Supervised learning methods we analyzed what factors (characteristics) determine internet access in a county.
 
        `Dependent variable: NoInternet_PctTractsOver75thPctile`
@@ -107,7 +107,50 @@ Using Supervised learning methods we analyzed what factors (characteristics) det
 	   
 **Correlation Analysis Across all factors**
 
-	   
+![text](images/reg_corr_matrix_all.png)
+![text](images/reg_corr_matrix_filter1.png)
+![text](images/reg_corr_cols_high_low.png)
+
+
+**Linear Regresion Models (selected columns)**
+
+These columns were selected based on the correlation analysis across all columns that had a higher positive or negative correlation with the NoInternet_PctTractsOver75thPctile column.
+
+select_cols = ['PopulationSize', 'PopulationChangeRate_2010_2020', 'PopulationChangeRate_2020_2021', 'GDP_2021_thousands', 'DAC_StatusYES_PctTracts', \
+    'SVI_OverallRanking', 'SVI_Socioeconomic', 'SVI_HouseholdCharacteristics', 'SVI_MinorityStatus', 'PctAge65andOlder', 'PctUnderAge18', 'PctHispanic', 'MedianHHInc', \
+    'PovertyRate', 'UnemploymentRate']
+
+['PopulationSize',
+ 'PopulationChangeRate_2010_2020',
+ 'PopulationChangeRate_2020_2021',
+ 'GDP_2021_thousands',
+ 'DAC_StatusYES_PctTracts',
+ 'SVI_OverallRanking',
+ 'SVI_Socioeconomic',
+ 'SVI_HouseholdCharacteristics',
+ 'SVI_MinorityStatus',
+ 'PctAge65andOlder',
+ 'PctUnderAge18',
+ 'PctHispanic',
+ 'MedianHHInc',
+ 'PovertyRate',
+ 'UnemploymentRate']
+ 
+Models Built:
+Linear Regression
+Scaled Ridge Regression
+- Add MSE Chart
+- feature and coeff
+Lasso Scaled Regression model
+- feature and coeff
+- MSE Chart
+Lasso #2: larger col. set
+- feature and coeff
+- MSE Chart
+
+Model results summary table
+![text](images/reg_model_results_summary.png)
+	
 ADD TEXT HERE
 
 Recommendations
