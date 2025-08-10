@@ -207,7 +207,7 @@ Lasso #2: larger col. set
 	
 ADD TEXT HERE
 
-**Best Model features - Scaled Ridge Regression with alpha =10.0**
+**Best Model features - Scaled Ridge Regression (with alpha =10.0)**  
 array([[-7.96303713, -4.70005285, -5.95631507, -3.21940584, -1.75589309,
          1.9177168 ,  2.33335125,  2.83934251,  2.16379391,  2.92041422,
          2.445844  ,  3.52093759,  4.45729818,  4.44419837,  6.65594881]])
