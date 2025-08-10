@@ -70,8 +70,8 @@ Methodology
 
 
 
-Results
---------
+Exploratory Data Analysis
+-------------------------
 What did your research find?
 
 TODO
@@ -83,11 +83,11 @@ TODO
 
 ![text](images/eda_pop_size_chart_1.png)
 ![text](images/eda_pop_size_chart_2.png)
+![text](images/eda_tech_potential_totals.png)
 ![text](images/eda_windtech_potential_1.png)
 ![text](images/eda_windtech_potential_2.png)
 ![text](images/eda_histogram_wind_1.png)
 ![text](images/eda_histogram_pv_1.png)
-![text](images/eda_tech_potential_totals.png)
 ![text](images/eda_utilitypv_boxplot.png)
 ![text](images/eda_landbasedwind_boxplot.png)
 ![text](images/eda_utlitypv_counties.png)
@@ -98,6 +98,17 @@ TODO
 
 ADD TEXT HERE
 
+Understanding what factors determine good Internet Access for a county
+----------------------------------------------------------------------
+Using Supervised learning methods we analyzed what factors (characteristics) determine internet access in a county.
+
+       `Dependent variable: NoInternet_PctTractsOver75thPctile`
+       `Independent variables: socio-economic variables in the dataset  (selected columns)`
+	   
+**Correlation Analysis Across all factors**
+
+	   
+ADD TEXT HERE
 
 Recommendations
 ---------------
