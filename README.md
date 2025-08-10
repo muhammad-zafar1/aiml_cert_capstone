@@ -1,7 +1,8 @@
 ## Professional Certificate in Machine Learning and Artificial Intelligence - Berkley-Hass Program
 ### Capstone Project Report
-(A Capstone Project for AI ML Certificate Course (July 2025)  
+(Final Capstone Project for AI & ML Certificate Course from UC Berkely, CA (July 2025)  
 **Author: Muhammad Zafar**
+Contact: www.linkedin.com/in/muhammad-usman-zafar-36b9199
 
 ### Report Title: Renewable Energy Project Opportunities in the Texas Permian Basin
 
@@ -76,13 +77,30 @@ What did your research find?
 
 TODO
 -- add EDA summary
-
 -- add Internet presence summary
-
 -- further details & Charts in the Presentation
 
+The U.S. Permian Basin is an area of land that spreads across the Western Texas and Eastern New Mexico states. The area comprises of 66 counties out of which 60 are in the state of Texas and 6 in New Mexico. First we explore the characteristics of the counties that comprise the U.S. Permian Basin.  
+Chart below shows county population size by counties. Largest county is El Paso with 867.9K.  
+
 ![text](images/eda_pop_size_chart_1.png)
+  
+Chart below shows population size by counties for top-10 counties by size.
 ![text](images/eda_pop_size_chart_2.png)
+
+Other Socio-economic characteristics are shown in the charts below --
+- Population is relatively young (under 18) in many counties
+- Median household income ranges between 40K to about 70K for most of the counties, with some exceptions on low and high end.
+- Unemployment rate average is around 5% which highlights economic opportunities for the people in the region.
+![text](images/eda_mix_chart_1.png)
+  
+
+SVI_OverallRanking - Composite Social Vulnerability Index (SVI) score ranks communities based on four vulnerability themes - socioeconomic, housing, minority status, transportation. Low scores (0.0) indicate low Vulnerability and high scores (1.0) indicate high Vulnerability.  
+- In more than half counties the SVI Overall ranking is > 0.6 indiccating moderate to high vulnerability. 
+- In many counties more than 15 percent of the workers are employed in the natural resources construction and maintenance sector. This sector is related to developing energy infrastrcuture projects in the region.   
+![text](images/eda_mix_chart_2.png)
+  
+
 ![text](images/eda_tech_potential_totals.png)
 ![text](images/eda_windtech_potential_1.png)
 ![text](images/eda_windtech_potential_2.png)
@@ -238,7 +256,6 @@ Project Outline
 ---------------
 - [Exploratory Data Analysis Notebook - ses_data_permian_counties_EDA_analysis.ipynb](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_EDA_analysis.ipynb)
 - [Supervised Learning - Regression Notebook - ses_data_permian_counties_regression.ipynb](https://github.com/muhammad-zafar1/aiml_cert_capstone/blob/main/ses_data_permian_counties_regression.ipynb)
-- [Executive Presentation](Link)
 
 
 #### Contact and Further Information:
