@@ -105,12 +105,13 @@ Using Supervised learning methods we analyzed what factors (characteristics) det
        `Dependent variable: NoInternet_PctTractsOver75thPctile`
        `Independent variables: socio-economic variables in the dataset  (selected columns)`
 	   
-**Correlation Analysis Across all factors**
+**Correlation Analysis & PairPlots Across all factors**
 
 ![text](images/reg_corr_matrix_all.png)
 ![text](images/reg_corr_matrix_filter1.png)
 ![text](images/reg_corr_cols_high_low.png)
-
+![text](images/sns-pairplot-1.png)
+![text](images/sns_pairplot_2_NoInternet_PctTractsOver75thPctile.png)
 
 **Linear Regresion Models (selected columns)**
 
@@ -119,6 +120,11 @@ These columns were selected based on the correlation analysis across all columns
 select_cols = ['PopulationSize', 'PopulationChangeRate_2010_2020', 'PopulationChangeRate_2020_2021', 'GDP_2021_thousands', 'DAC_StatusYES_PctTracts', \
     'SVI_OverallRanking', 'SVI_Socioeconomic', 'SVI_HouseholdCharacteristics', 'SVI_MinorityStatus', 'PctAge65andOlder', 'PctUnderAge18', 'PctHispanic', 'MedianHHInc', \
     'PovertyRate', 'UnemploymentRate']
+
+y = data_clean[['NoInternet_PctTractsOver75thPctile']]
+X = data_clean[select_cols]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=randval)
+
 
 ['PopulationSize',
  'PopulationChangeRate_2010_2020',
@@ -136,6 +142,40 @@ select_cols = ['PopulationSize', 'PopulationChangeRate_2010_2020', 'PopulationCh
  'PovertyRate',
  'UnemploymentRate']
  
+large_col_set = \
+['PopulationSize',
+ 'PopulationChangeRate_2010_2020',
+ 'PopulationChangeRate_2020_2021',
+ 'GDP_2021_thousands',
+ 'DAC_StatusYES_PctTracts',
+ 'SVI_OverallRanking',
+ 'SVI_Socioeconomic',
+ 'SVI_HouseholdCharacteristics',
+ 'SVI_MinorityStatus',
+ 'PctAge65andOlder',
+ 'PctUnderAge18',
+ 'PctHispanic',
+ 'MedianHHInc',
+ 'PovertyRate',
+ 'UnemploymentRate',
+ 'NoInternet_PctTractsOver75thPctile',
+ 'ElectricalPowerTransmissionLine_km',
+ 'ElectricalPowerTransmissionLine_miles',
+ 'CrudeOilPipeline_km',
+ 'CrudeOilPipeline_miles',
+ 'PetroleumPipeline_km',
+ 'PetroleumPipeline_miles',
+ 'NaturalGasPipeline_km',
+ 'NaturalGasPipeline_miles',
+ 'CO2Pipelines_km',
+ 'CO2Pipelines_miles',
+ 'UtilityPV_TechPotential',
+ 'ResidentialPV_TechPotential',
+ 'CommercialPV_TechPotential',
+ 'LandbasedWind_TechPotential',
+ 'DistributedWind_TechPotential',
+ 'GeothermalHeatPump_EconPotential']
+ 
 Models Built:
 Linear Regression
 Scaled Ridge Regression
@@ -148,7 +188,21 @@ Lasso #2: larger col. set
 - feature and coeff
 - MSE Chart
 
-Model results summary table
+![text](images/reg_scalar_ridge_pic.png)
+
+![text](images/reg_scalar_ridge_mse_chart.png)
+![text](images/reg_scalar_ridge_features.png)
+
+![text](images/reg_lasso1_mse_chart.png)
+![text](images/reg_lasso1_features_list.png)
+
+![text](images/reg_lasso2_mse_chart.png)
+![text](images/reg_lasso2_features_list.png)
+
+![text](images/reg_model_results_summary.png)
+
+
+**Model results summary table**
 ![text](images/reg_model_results_summary.png)
 	
 ADD TEXT HERE
