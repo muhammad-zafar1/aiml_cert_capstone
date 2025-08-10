@@ -199,13 +199,27 @@ Lasso #2: larger col. set
 ![text](images/reg_lasso2_mse_chart.png)
 ![text](images/reg_lasso2_features_list.png)
 
-![text](images/reg_model_results_summary.png)
+![text](images/xxx.png)
 
 
 **Model results summary table**
 ![text](images/reg_model_results_summary.png)
 	
 ADD TEXT HERE
+
+**Best Model features - Scaled Ridge Regression with alpha =10.0**
+array([[-7.96303713, -4.70005285, -5.95631507, -3.21940584, -1.75589309,
+         1.9177168 ,  2.33335125,  2.83934251,  2.16379391,  2.92041422,
+         2.445844  ,  3.52093759,  4.45729818,  4.44419837,  6.65594881]])
+Features(['MedianHHInc', 'PopulationChangeRate_2010_2020', 'SVI_Socioeconomic',
+       'ElectricalPowerTransmissionLine_km',
+       'GeothermalHeatPump_EconPotential', 'PetroleumPipeline_km',
+       'SVI_HouseholdCharacteristics', 'PovertyRate', 'NaturalGasPipeline_km',
+       'UnemploymentRate', 'PctHispanic', 'CrudeOilPipeline_km',
+       'SVI_MinorityStatus', 'PctAge65andOlder', 'DAC_StatusYES_PctTracts'])
+
+![text](images/reg_best_model_features.png)
+	  
 
 Recommendations
 ---------------
