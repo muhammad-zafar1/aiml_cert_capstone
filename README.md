@@ -100,7 +100,11 @@ SVI_OverallRanking - Composite Social Vulnerability Index (SVI) score ranks comm
 - In many counties more than 15 percent of the workers are employed in the natural resources construction and maintenance sector. This sector is related to developing energy infrastrcuture projects in the region.   
 ![text](images/eda_mix_chart_2.png)
   
-
+Table and chart below shows technical potential of rewnewable energy projects in the Permian Basin overall.  
+- UtlityPV has the highest total technical potential of over 14000 MW
+- Followed by LandbasedWind with total potential of 1800 MW
+- Next is distributed wind (342 MW) and CommercialPV (11.6 MW). 
+- Clearly the top two areas to invest with the highest potential is UtilityPV and LandbasedWind technologies.
 ![text](images/eda_tech_potential_totals.png)
 ![text](images/eda_windtech_potential_1.png)
 ![text](images/eda_windtech_potential_2.png)
